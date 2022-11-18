@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript-basic</title>
+    <script src="/index.js"></script>
+  </head>
+  <body>
+    <!-- JavaScript dapat digunakan untuk mengganti isi dari dokumen html -->
+    <h2>javascript dapat mengganti isi html</h2>
+    <!-- id adalah identitas unik suatu element -->
+    <p id="demo">DEFAULT</p>
+
+    <!-- membuat button yang jika diklik memiliki action untuk mengganti 
+        tampilan suatu element
+        <button> : untuk membuat tombol pada html
+        attribute onclick : digunakan untuk memberi action pada element button
+        getElementById(''): digunakan untuk menseleksi element menggunakan id
+        innerHTML : mengganti output spesifik
+        -->
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'Repalace 1'"
+      ;
+    >
+      klik contoh 1
+    </button>
+
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'Repalace 2'"
+      ;
+    >
+      klik contoh 2
+    </button>
+  </body>
+</html>

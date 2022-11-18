@@ -8,32 +8,33 @@
     <script src="/index.js"></script>
   </head>
   <body>
-    <!-- JavaScript dapat digunakan untuk mengganti isi dari dokumen html -->
-    <h2>javascript dapat mengganti isi html</h2>
-    <!-- id adalah identitas unik suatu element -->
-    <p id="demo">DEFAULT</p>
+    <!-- JavaScript dapat digunakan untuk mengganti isi gambar dokumen html -->
+    <h2>javascript dapat mengganti isi gambar html</h2>
 
-    <!-- membuat button yang jika diklik memiliki action untuk mengganti 
-        tampilan suatu element
-        <button> : untuk membuat tombol pada html
-        attribute onclick : digunakan untuk memberi action pada element button
-        getElementById(''): digunakan untuk menseleksi element menggunakan id
-        innerHTML : mengganti output spesifik
-        -->
+    <!-- id adalah identitas unik suatu element -->
+    <img src="" alt="" id="demo" width="100%" />
+    <!-- membuat button untuk mereplace gambar -->
     <button
       type="button"
-      onclick="document.getElementById('demo').innerHTML = 'Repalace 1'"
+      onclick="document.getElementById('demo').src='/src/img/img1.jpg'"
       ;
     >
-      klik contoh 1
+      Click 1
+    </button>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').src='/src/img/img2.png'"
+      ;
+    >
+      Click 2
     </button>
 
     <button
       type="button"
-      onclick="document.getElementById('demo').innerHTML = 'Repalace 2'"
+      onclick="document.getElementById('demo').src ='/src/img/img1.jpg'"
       ;
     >
-      klik contoh 2
+      Text
     </button>
   </body>
 </html>
